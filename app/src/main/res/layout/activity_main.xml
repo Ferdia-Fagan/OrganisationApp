@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/MainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/MainMenu_Bottom2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/MainMenuButton_Schedules"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/buttonsquareorangenotpressed"
+                android:onClick="ScheduleButtonPressed"
+                android:text="@string/MainMenu_Schedules" />
+
+            <Button
+                android:id="@+id/MainMenuButton_CurrentSchedule"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="CurrentScheduleButtonPressed"
+                android:text="@string/MainMenu_Current"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/MainMenuButton_ToDoLists"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:onClick="ToDoListButtonPressed"
+                android:background="@drawable/buttonsquareorangenotpressed"
+                android:text="@string/MainMenu_ToDoLists" />
+
+            <Button
+                android:id="@+id/MainMenuButton_CurrentToDoList"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="CurrentToDoListButtonPressed"
+                android:text="@string/MainMenu_Current"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/MainMenuButton_Calander"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:onClick="CalanderButtonPressed"
+                android:background="@drawable/buttonsquareorangenotpressed"
+                android:text="@string/MainMenu_Calander" />
+
+            <Button
+                android:id="@+id/MainMenuButton_CalanderAdd"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="AddDateButtonPressed"
+                android:text="@string/MainMenu_AddToDiary"
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/MainMenuButton_Settings"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="3"
+            android:onClick="SettingsButtonPressed"
+            android:background="@drawable/buttonsquareorangenotpressed"
+            android:text="@string/MainMenu_Settings" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MainMenu_Bottom2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/MainMenu_Bottom"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/MainMenuButton_QuickDiary"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="QuickDiaryButtonPressed"
+            android:background="@drawable/buttonsquareorangenotpressed"
+            android:text="@string/MainMenu_QuickDiary" />
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="15px"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/MainMenuButton_Today"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="TodayButtonPressed"
+                android:background="@drawable/buttonsquareorangenotpressed"
+                android:text="@string/MainMenu_Today" />
+
+            <Button
+                android:id="@+id/MainMenuButton_WhatsOnNow"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="WhatsOnNowButtonPressed"
+                android:background="@drawable/buttonsquareorangenotpressed"
+                android:text="@string/MainMenu_WhatsOnNow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/MainMenu_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/MainMenuButton_QueryDiary"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="QuiryDiaryButtonPressed"
+
+            android:background="@drawable/circularbuttonorangecenter"
+            android:text="@string/MainMenu_QueryDiary"
+            />
+
+
+        <Button
+            android:id="@+id/MainMenuButton_ImBored"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:onClick="ImBoredButtonPressed"
+
+            app:layout_constraintLeft_toRightOf="@+id/MainMenuButton_QueryDiary"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/MainMenu_ImBored"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/MainMenu_BRButtons"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            app:layout_constraintLeft_toRightOf="@+id/MainMenuButton_QueryDiary"
+            app:layout_constraintTop_toBottomOf="@+id/MainMenuButton_ImBored"
+            app:layout_constraintRight_toRightOf="parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/MainMenuButton_Account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:onClick="AccountButtonPressed"
+
+
+                android:text="@string/MainMenu_Account"
+                />
+
+            <Button
+                android:id="@+id/MainMenuButton_Help"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:onClick="HelpButtonPressed"
+
+
+                app:layout_constraintLeft_toRightOf="@+id/MainMenuButton_QueryDiary"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/Help"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

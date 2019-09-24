@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleCode.SchedulesMain">
+
+    <View
+        android:id="@+id/TopSpace"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/orangebar"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/Schedules_ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/TopSpace"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:onClick="BackButtonPressed"
+            android:background="@drawable/backbutton"
+            />
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/orangebar"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/MainMenu_Schedules"
+            android:gravity="center"
+            tools:textSize="45dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ToolBarMarginImage"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/Schedules_ToolBar"
+        android:background="@drawable/orangebar" />
+
+    <ScrollView
+        android:id="@+id/Schedules_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/ToolBarMarginImage"
+        app:layout_constraintBottom_toTopOf="@+id/SchedulesMain_BottomBar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/SchedulesMain_BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/SchedulesBB_Options"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/Options"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <Button
+            android:id="@+id/SchedulesMain_Delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/SchedulesMain_Delete"
+            />
+        <Button
+            android:id="@+id/SchedulesMain_Add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Add"
+            android:onClick="AddButtonPressed"/>
+
+        <Button
+            android:id="@+id/SchedulesMain_Help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Help" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

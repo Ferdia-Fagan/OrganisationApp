@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalanderCode.CalanderView_Year">
+
+    <LinearLayout
+        android:id="@+id/TopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:id="@+id/Calander_TB_Back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/backbutton"
+            />
+
+        <ImageButton
+            android:id="@+id/Calander_TB_ShiftLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shiftleft"
+            />
+
+        <TextView
+            android:id="@+id/Calander_TB_YearTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="2019"
+            />
+
+
+        <ImageButton
+            android:id="@+id/Calander_TB_ShiftRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shiftright"
+            />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:columnCount="3"
+        android:rowCount="4"
+
+
+
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toTopOf="@+id/Calander_BottomBar"
+        app:layout_constraintTop_toBottomOf="@+id/TopBar"
+        >
+
+        <!-- Row1-->
+
+        <Button
+            android:singleLine="false"
+            android:text="1 \n January"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+        <Button
+            android:text="2 \n February"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+
+        <Button
+            android:text="3 \n March"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+        <Button
+            android:text="4 \n April"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+        <Button
+
+            android:text="5 \n May"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+        <Button
+            android:text="6 \n June"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+
+        <Button
+            android:text="7 \n July"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+        <Button
+            android:text="8 \n August"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+        <Button
+
+            android:text="9 \n September"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+        <Button
+            android:text="10 \n October"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+
+        <Button
+            android:text="11 \n November"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+        <Button
+            android:text="12 \n December"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+
+            />
+
+
+    </GridLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/Calander_BottomBar"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+
+        <Button
+            android:id="@+id/Calander_BB_Add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Add" />
+
+        <Button
+            android:id="@+id/Calander_BB_Help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Help" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

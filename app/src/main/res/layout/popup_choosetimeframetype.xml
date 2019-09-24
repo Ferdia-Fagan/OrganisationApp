@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Choose Time Frame Type" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/topbar">
+
+        <Button
+            android:id="@+id/btn_choose_date-to-date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date-To-Date" />
+
+        <Button
+            android:id="@+id/btn_choose_day-to-day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Day-To_Day" />
+
+        <Button
+            android:id="@+id/btn_choose_numberofdays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number Of Days" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

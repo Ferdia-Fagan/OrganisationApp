@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleCode.SchedulesView_Day">
+
+    <LinearLayout
+        android:id="@+id/TopBar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ScheduleDayView_TB1_Back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/backbutton"
+            />
+
+        <TextView
+            android:id="@+id/ScheduleDayView_TB1_Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/MainMenu_Schedules"
+            />
+
+        <ImageButton
+            android:id="@+id/ScheduleDayView_TB1_Help"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/questionmark"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TopBar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/TopBar1"
+        >
+
+        <ImageButton
+            android:id="@+id/ScheduleDayView_TB2_ShiftArrowLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shiftleft"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            >
+
+            <TextView
+                android:id="@+id/ScheduleDayView_TB2_DayTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/SchedulesMain_Day"
+                />
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="#"
+                app:layout_constraintTop_toTopOf="@+id/ScheduleDayView_TB2_DayTitle"
+                app:layout_constraintLeft_toLeftOf="@+id/ScheduleDayView_TB2_DayTitle"
+                />
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/ScheduleDayView_TB2_ShiftArrowLRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shiftright"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ScheduleDayView_Main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/TopBar2"
+        app:layout_constraintBottom_toTopOf="@+id/BottomBar"
+        >
+
+        <ImageView
+            android:id="@+id/ScheduleDayView_MainDivideBar"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/black"
+            android:layout_marginStart="80dp"
+            />
+
+        <ScrollView
+            android:id="@+id/ScheduleDayView_MainScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/BottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <Button
+            android:id="@+id/ScheduleDayView_BB_Options"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Options"
+            />
+
+        <Button
+            android:id="@+id/ScheduleDayView_BB_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Delete"
+            />
+
+        <Button
+            android:id="@+id/ScheduleDayView_BB_Add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Add"
+            />
+
+        <Button
+            android:id="@+id/ScheduleDayView_BB_ImBored"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Help"
+            />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,46 @@
+<
+	// Schedule details
+/*
+Name:
+Folder id:
+ScheduleTypeID:
+ScheduleTimeFrameTypeId:
+ScheduleTimeFrame
+description:
+*/
+
+
+>
+<
+	// days
+/* 
+format:
+*/
+<
+Daynumber	|| 	Day	||	date
+
+/*
+Format:
+s	-> single task
+m	-> task list
+p	-> parent
+c	-> child
+*/
+
+/*
+s	start
+Format within SINGLE TASK	(All have to do for now)
+:
+name:
+description:
+priority:
+startTime
+finishTime
+
+/	end
+*/
+
+>
+
+
+>

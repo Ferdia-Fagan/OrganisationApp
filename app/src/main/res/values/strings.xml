@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">PlanShare</string>
+
+    <string name="Add">Add</string>
+    <string name="Delete">Delete</string>
+    <string name="Help">Help</string>
+    <string name="Options">Options</string>
+
+    // Main
+    <string name="MainMenu_Schedules">Schedules</string>
+    <string name="MainMenu_Calander">Calander</string>
+    <string name="MainMenu_Settings">Settings</string>
+    <string name="MainMenu_ToDoLists">To Do Lists</string>
+    <string name="MainMenu_QuickDiary">Quick Diary</string>
+    <string name="MainMenu_Today">Today</string>
+    <string name="MainMenu_QueryDiary">Query Diary</string>
+    <string name="MainMenu_Help">Help</string>
+    <string name="MainMenu_AddToDiary">Add To Diary</string>
+    <string name="MainMenu_Current">Current</string>
+
+    <string name="MainMenu_WhatsOnNow">Whats on now</string>
+
+    <string name="MainMenu_ImBored">I Am Bored</string>
+
+    <string name="MainMenu_Account">Account</string>
+
+    <string name="MainMenu_LogBook">Log Book</string>
+
+    // Schedules
+    //Main Schedule
+    <string name="SchedulesMain_AddSchedule">Add</string>
+    <string name="SchedulesMain_Day">day</string>
+    <string name="SchedulesMain_SendOrQueryDiary">Send Or Query Diary</string>
+    <string name="SchedulesMain_Delete">Delete</string>
+
+    // individual Schedule
+
+    // ToDoList
+    //Main ToDoList
+    <string name="ToDoList">To Do Lists</string>
+
+    // individual TodoList
+
+    // Calander
+    //Main Calander
+    <string name="Calander">Calander</string>
+
+    <string-array name="Months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    // individual Year
+
+    // Settings
+    //Main Settings
+    <string name="Settings">Settings</string>
+
+    // Pop ups
+    <string name="CreateTitle">Create a:</string>
+    <string name="CreateSchedule">Schedule</string>
+    <string name="CreateFolder">Folder</string>
+
+
+
+    // End of popups
+</resources>
